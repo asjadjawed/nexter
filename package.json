@@ -1,0 +1,27 @@
+{
+  "name": "nexter",
+  "version": "1.0.0",
+  "description": "A CSS grid website",
+  "main": "src/pages/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/pages/index.html",
+    "build": "rm -rf ./cache/ ./dist/ && parcel build --no-source-maps src/pages/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asjadjawed/nexter.git"
+  },
+  "author": "Asjad Jawed Siddiqui Qadri <asjadjawed@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asjadjawed/nexter/issues"
+  },
+  "homepage": "https://github.com/asjadjawed/nexter#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.1.0",
+    "sass": "^1.22.9"
+  }
+}

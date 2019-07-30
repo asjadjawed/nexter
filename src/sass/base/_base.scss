@@ -1,0 +1,61 @@
+// //
+// Basic settings & resets
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; // from body element (below)
+}
+
+// //
+// Set CSS variables here when needed (these get generated in build)
+:root {
+  // //
+  // Auto-generate color pallet as CSS variables (use below to check / set as css var, the color map)
+  //
+  // @each $name, $value in $colors {
+  //   #{"--"+$name}: #{$value};
+  // }
+}
+
+html {
+  // //
+  // By using % way we don't overwrite user set font size
+  // and any resizing is relative to user value
+  font-size: (10 / 16 * 100%); // 1 rem is 10px; 100% is 16px
+}
+
+body {
+  min-height: 100vh; // to make sure at no point html element is visible
+  box-sizing: border-box; // setting border box, inherited using universal selectors (above)
+
+  background-color: $color-background; // setting the main background color set in variables file
+
+  // //
+  // start here by setting max-width & padding (if needed)
+  // the body max-width is one greater than the media query i.e. 'xs'->'sm'
+  max-width: map-get($max-widths, "sm");
+  margin: 0 auto;
+}
+
+// //
+// Basic Reset for Buttons and Form Elements
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.15;
+  margin: 0;
+}
+
+::selection {
+  background: map-get(
+    $colors,
+    color-primary
+  ); // setting selection color to primary theme
+  color: setTextColor($color-primary);
+}

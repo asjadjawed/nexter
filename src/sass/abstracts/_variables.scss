@@ -1,0 +1,99 @@
+// +-+-+-+-+-+-+-+-+-+
+// Website Max-Width +
+// +-+-+-+-+-+-+-+-+-+
+
+// //
+// max-widths for every media query in _mixins.scss
+$max-widths: (
+  "sm": 540px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1140px
+);
+
+// +-+-+-+-+-+-+-+
+// Font-Settings +
+// +-+-+-+-+-+-+-+
+
+// //
+// Some generic font-families
+//
+// $default-font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+//
+// $default-font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+//
+// $default-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+
+$default-font-family: (
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji"
+);
+
+$default-font-size: 1.6rem; // this is the usual browser default of 16px
+
+// +-+-+-+-+-+-+-+-+
+// Colors & Shades +
+// +-+-+-+-+-+-+-+-+
+
+$color-primary: #0074d9; // Set color here
+$color-secondary: #ff4136; // Set color here
+$color-tertiary: #2ecc40; // Set color here
+
+$color-background: #fff; // Set main background color here
+
+// //
+// Color pallete
+// Add remove or modify colors in $colors
+// Colors near the end are auto-generated
+$colors: (
+  white: #eeeeee,
+  black: #111111,
+  aqua: #7fdbff,
+  blue: #0074d9,
+  lime: #01ff70,
+  navy: #001f3f,
+  teal: #39cccc,
+  olive: #3d9970,
+  green: #2ecc40,
+  red: #ff4136,
+  maroon: #85144b,
+  orange: #ff851b,
+  purple: #b10dc9,
+  yellow: #ffdc00,
+  fuchsia: #f012be,
+  silver: #dddddd,
+  gray: customDarken(white, 50%),
+  gray-l1: customDarken(white, 10%),
+  gray-l2: customDarken(white, 20%),
+  gray-l3: customDarken(white, 30%),
+  gray-l4: customDarken(white, 40%),
+  gray-d1: customLighten(black, 10%),
+  gray-d2: customLighten(black, 20%),
+  gray-d3: customLighten(black, 30%),
+  gray-d4: customLighten(black, 40%),
+  color-primary: $color-primary,
+  color-primary-l1: customLighten($color-primary, 10%),
+  color-primary-l2: customLighten($color-primary, 20%),
+  color-primary-d1: customDarken($color-primary, 10%),
+  color-primary-d2: customDarken($color-primary, 20%),
+  color-secondary: $color-secondary,
+  color-secondary-l1: customLighten($color-secondary, 10%),
+  color-secondary-l2: customLighten($color-secondary, 20%),
+  color-secondary-d1: customDarken($color-secondary, 10%),
+  color-secondary-d2: customDarken($color-secondary, 20%),
+  color-tertiary: $color-tertiary,
+  color-tertiary-l1: customLighten($color-tertiary, 10%),
+  color-tertiary-l2: customLighten($color-tertiary, 20%),
+  color-tertiary-d1: customDarken($color-tertiary, 10%),
+  color-tertiary-d2: customDarken($color-tertiary, 20%)
+);

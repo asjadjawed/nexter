@@ -1,8 +1,0 @@
-body {
-  font-family: $default-font-family;
-  color: setTextColor(
-    $color-background
-  ); // using function to set contrasted text color
-  font-weight: 400; // regular weight
-  line-height: 1.15; // setting to correct across browser, change in classes as needed
-}

@@ -1,0 +1,40 @@
+/** 
+* This selector would look like:
+* 
+* .heading-4, .heading-3, .heading-2, .heading-1 {
+*  ...
+* }
+* 
+* Better to use extend here in place of mixin as code won't be repeated
+* as these properties are common to all selectors
+* mixin would copy the code to all selectors
+*/
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-gray-light-1;
+  }
+
+  &--dark {
+    color: $color-gray-dark-1;
+  }
+}

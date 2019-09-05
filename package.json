@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/pages/index.html",
-    "build": "rm -rf ./cache/ ./dist/ && parcel build --no-source-maps src/pages/index.html"
+    "build": "rm -rf ./dist/ && parcel build --no-source-maps --public-url /nexter/ src/pages/index.html"
   },
   "repository": {
     "type": "git",
